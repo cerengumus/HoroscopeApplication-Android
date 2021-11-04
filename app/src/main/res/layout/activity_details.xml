@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        ></ImageView>
+
+    <TextView
+        android:textAlignment="center"
+        android:background="#120030"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:text="
+
+I had implemented ListView which was working perfectly. Each list entry contains ImageView and TextView. Thumbnail and title.
+
+I implemented imageView.setOnItemClick() in ListviewAdaper that shows TextView and clicking it again on ImageView make TextView GONE.
+
+Now I moved to RecyclerView with same layout (ImageView and TextView).
+
+In public void onBindViewHolder() of my RecyclerAdaper have added same code as I was implemented in list view."
+       ></TextView>
+</LinearLayout>
